@@ -1,0 +1,600 @@
+/* 기본 설정 */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* 가로 스크롤 숨김 */
+  overflow-y: auto; /* 세로 스크롤 자동 표시 */
+  background-image: url('/image/ai.jpg'); /* 배경 이미지 경로 */
+  background-size: cover; /* 배경 이미지 크기 설정 */
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝으로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* padding이 요소 크기에 포함되도록 설정 */
+}
+
+.title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;  /* 항목 간 간격 */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #00f;
+}
+
+/* 카드 컨테이너 (Portfolio Section) */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(44, 44, 44, 0.8);
+  color: white;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-icon img {
+  width: 60px; /* 아이콘 크기 줄이기 */
+  height: 60px;
+}
+
+.card h3 {
+  font-size: 30px; /* 제목 크기 줄이기 */
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 15px; /* 설명 글자 크기 줄이기 */
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* 팀 소개 페이지 */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.about-box {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: none;
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.about-box h3 {
+  font-size: 22px;
+  margin: 12px 0 4px;
+  color: #ffffff;
+}
+
+.about-box p {
+  font-size: 16px;
+  color: #dcdcdc;
+}
+
+.about-box img {
+  width: 100%;
+  height: 480px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.about-box img:hover {
+  transform: scale(1.05);
+}
+
+.left-box, .right-box {
+  align-items: center;
+  text-align: center;
+}
+
+.left-box img, .right-box img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 섹션 내용 */
+section.definition, section.history, section.applications, section.pros-cons, section.future, section.references {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn {
+  background-color: transparent;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.toggle-btn:hover {
+  color: #00f;
+}
+
+.toggle-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Trend Cards */
+.trend-section {
+  background-color: #f0f4f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.trend-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.trend-card {
+  width: 280px;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.trend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.trend-card h3 {
+  color: #1e293b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.trend-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.highlight-number {
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.bar-graph {
+  background-color: #e0e0e0;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.bar {
+  background-color: #3b82f6;
+  height: 100%;
+  padding-right: 10px;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  line-height: 18px;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .trend-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trend-card {
+    width: 90%;
+  }
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* 기본 스타일 */
+section .comparison-table,
+.trend-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+#introduction {
+  background: url('your-background.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.intro-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 제목 및 설명 */
+.intro-wrapper {
+  font-size: 32px;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-description {
+  font-size: 17px;
+  color: #374151;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* 부제목 */
+.sub-heading {
+  font-size: 24px;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 표 스타일 */
+.ai-table-container {
+  overflow-x: auto;
+}
+
+.ai-comparison {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ai-comparison th,
+.ai-comparison td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.ai-comparison thead th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 700;
+}
+
+.ai-comparison td:first-child {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+/* Trend Cards */
+.trend-section {
+  background-color: #f0f4f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.trend-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.trend-card {
+  width: 280px;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.trend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.trend-card h3 {
+  color: #1e293b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.trend-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.highlight-number {
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.bar-graph {
+  background-color: #e0e0e0;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.bar {
+  background-color: #3b82f6;
+  height: 100%;
+  padding-right: 10px;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  line-height: 18px;
+  border-radius: 10px;
+}
+
+/* 기술 원리 */
+.tech-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.tool-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tool-section:hover {
+  transform: scale(1.02);
+}
+
+.tool-section h2 {
+  font-size: 1.8rem;
+  color: #7dd3fc;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 0.5rem;
+}
+
+.tool-section p {
+  color: white;
+}
+
+.tool-section li {
+  color: white;
+}
+
+.steps {
+  list-style: none;
+  padding-left: 1rem;
+  line-height: 1.8;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.steps li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+}
+
+.diagram p {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  background-color: rgba(56, 189, 248, 0.3);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.card-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.tech-card {
+  background-color: rgba(30, 41, 59, 0.8);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.tech-card p {
+  font-size: 1rem;
+  color: #f1f5f9;
+}
