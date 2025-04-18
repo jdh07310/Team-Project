@@ -19,7 +19,9 @@ html, body {
   padding: 40px;
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+}
 /* 네비게이션 바 */
 .navbar {
   display: flex;
