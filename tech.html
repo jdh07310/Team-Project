@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- 상단 네비게이션 바 -->
+  <header class="navbar">
+    <div class="title">
+      <h1>생성형 AI의 원리 및 응용 사례</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="team.html">팀 소개</a></li>
+        <li><a href="teamproject.html">프로젝트 소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="tech-container">
+      <section class="tool-section">
+        <h2>ChatGPT</h2>
+        <ul class="steps">
+          <li>1. 사용자 입력 → 자연어 토큰화</li>
+          <li>2. Transformer 모델을 통해 문맥 이해</li>
+          <li>3. 확률 기반으로 문장 예측 및 생성</li>
+        </ul>
+      </section>
+
+      <section class="tool-section">
+        <h2>DALL·E 2</h2>
+        <ul class="steps">
+          <li>1. 텍스트 프롬프트 → CLIP으로 임베딩</li>
+          <li>2. 디퓨전 모델을 통해 이미지 점진 생성</li>
+          <li>3. 고해상도 이미지로 리파인</li>
+        </ul>
+      </section>
+
+      <section class="tool-section">
+        <h2>Midjourney</h2>
+        <ul class="steps">
+          <li>1. 감성 기반 텍스트 임베딩</li>
+          <li>2. 스타일 특화 디퓨전 모델 사용</li>
+          <li>3. 예술적 이미지 생성</li>
+        </ul>
+      </section>
+
+      <section class="tool-section">
+        <h2>작동 원리 시각화</h2>
+        <div class="steps diagram">
+          <p><strong>DALL·E 2:</strong> 텍스트 → 임베딩 → 디퓨전 → 이미지</p>
+          <p><strong>Midjourney:</strong> 프롬프트 → 디퓨전 → 스타일 이미지</p>
+          <p><strong>ChatGPT:</strong> 입력 → 문맥 이해 → 문장 생성</p>
+        </div>
+      </section>
+
+      <section class="tool-section">
+        <h2>기술 비교 표</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>도구</th>
+              <th>사용 기술</th>
+              <th>특징 요약</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DALL·E 2</td>
+              <td>GPT, CLIP, 디퓨전</td>
+              <td>텍스트를 현실 이미지로 변환</td>
+            </tr>
+            <tr>
+              <td>Midjourney</td>
+              <td>디퓨전 기반</td>
+              <td>예술적 스타일의 감성 이미지</td>
+            </tr>
+            <tr>
+              <td>ChatGPT</td>
+              <td>GPT (Transformer)</td>
+              <td>자연어 이해 및 대화 생성</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="tool-section">
+        <h2>AI 실제 사용 예시</h2>
+        <div class="card-grid">
+          <div class="tech-card">
+            <h3>DALL·E 2</h3>
+            <p>“우주복 고양이” 이미지 생성</p>
+          </div>
+          <div class="tech-card">
+            <h3>Midjourney</h3>
+            <p>“고대 마법사” 스타일 일러스트</p>
+          </div>
+          <div class="tech-card">
+            <h3>ChatGPT</h3>
+            <p>“소설 시작 문장 써줘”에 대한 응답</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

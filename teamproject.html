@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project Menu - 프로젝트 소개</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 상단 네비게이션 바 -->
+  <header class="navbar">
+    <div class="title">
+      <h1>생성형 AI의 원리 및 응용 사례</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="team.html">팀 소개</a></li>
+        <li><a href="teamproject.html">프로젝트 소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 컨테이너로 중앙 정렬 -->
+  <main class="main-container">
+    <!-- 프로젝트 소개 헤더 -->
+    <header class="project-header">
+      <h1>팀 프로젝트 소개</h1>
+      <p>생성형 AI 기술의 원리와 응용 사례를 탐구하는 웹사이트 제작 프로젝트</p>
+    </header>
+
+    <!-- 섹션: 프로젝트 개요 -->
+    <section class="project-section" style="--section-index: 1;">
+      <h2>
+        <button class="toggle-btn" onclick="toggleSection('overview-content')">1. 프로젝트 개요</button>
+      </h2>
+      <div class="toggle-content" id="overview-content">
+        <p><strong>프로젝트 주제명:</strong> "생성형 AI의 원리와 응용 사례"</p>
+        <p>본 프로젝트는 생성형 AI(Generative AI)의 핵심 기술 원리와 실제 산업 분야에서의 활용 사례를 체계적으로 분석하고, 이를 쉽게 전달할 수 있는 반응형 웹사이트를 제작하는 것을 목표로 합니다.</p>
+      </div>
+    </section>
+
+    <!-- 섹션: 프로젝트 목적 및 배경 -->
+    <section class="project-section" style="--section-index: 2;">
+      <h2>
+        <button class="toggle-btn" onclick="toggleSection('purpose-content')">2. 프로젝트 목적 및 배경</button>
+      </h2>
+      <div class="toggle-content" id="purpose-content">
+        <p><strong>왜 이 주제를 선택했는지?</strong> 생성형 AI는 현재 AI 기술 발전의 중심에 있으며, 텍스트, 이미지, 오디오 등 다양한 콘텐츠 생성 분야에서 빠르게 상용화되고 있습니다.</p>
+        <p><strong>생성형 AI가 왜 중요한가?</strong> 생성형 AI는 창의적 콘텐츠 생성, 자동화, 의사결정 지원 등 다양한 영역에서 산업 혁신을 촉진하고 있으며, 미래 기술 생태계의 핵심 요소로 자리매김하고 있습니다.</p>
+        <p><strong>팀원들의 관심 분야와 연관성:</strong> 본 팀은 AI 기술, 웹 개발, 정보보호, 데이터 분석 등 다양한 분야에 관심을 갖고 있으며, 이번 프로젝트를 통해 각자의 기술 역량을 융합하여 실질적인 학습 성과를 도출하고자 하였습니다.</p>
+      </div>
+    </section>
+
+    <!-- 섹션: 주요 기능 및 페이지 구성 -->
+    <section class="project-section" style="--section-index: 3;">
+      <h2>
+        <button class="toggle-btn" onclick="toggleSection('features-content')">3. 주요 기능 및 페이지 구성</button>
+      </h2>
+      <div class="toggle-content" id="features-content">
+        <ul>
+          <li><strong>홈:</strong> 프로젝트 개요, 팀 방향성, 최신 AI 트렌드 간략 소개</li>
+          <li><strong>팀 소개:</strong> 팀 구성원 소개 및 GitHub/포트폴리오 링크 제공</li>
+          <li><strong>프로젝트 소개:</strong> 프로젝트 개요, 목표, 사용 기술, 개발 과정 설명</li>
+          <li><strong>기술 원리:</strong> 생성형 AI의 학습 구조, 주요 알고리즘(Transformer, Diffusion Model 등), 윤리적 고려사항 소개</li>
+          <li><strong>응용 사례:</strong> 생성형 AI의 산업별 적용 사례(교육, 금융, 엔터테인먼트, 의료 등) 소개</li>
+          <li><strong>참고자료:</strong> 프로젝트 수행 시 참고한 연구 자료 및 외부 리소스 명시</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 섹션: 사용 기술 -->
+    <section class="project-section" style="--section-index: 4;">
+      <h2>
+        <button class="toggle-btn" onclick="toggleSection('tech-content')">4. 사용 기술</button>
+      </h2>
+      <div class="toggle-content" id="tech-content">
+        <ul>
+          <li>HTML5, CSS3를 활용한 반응형 웹사이트 구현</li>
+          <li>CSS Grid, Flexbox 기반 레이아웃 설계</li>
+          <li>Google Fonts (Noto Sans KR) 사용으로 가독성 향상</li>
+          <li>개발 도구: Visual Studio Code, GitHub, GitHub Pages (또는 Vercel 배포)</li>
+          <li>추가 활용: CSS Animation 일부 적용</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 섹션: 개발 후기 및 배운 점 -->
+    <section class="project-section" style="--section-index: 5;">
+      <h2>
+        <button class="toggle-btn" onclick="toggleSection('reflection-content')">5. 개발 후기 및 배운 점</button>
+      </h2>
+      <div class="toggle-content" id="reflection-content">
+        <p><strong>어려웠던 점과 해결 과정:</strong> 반응형 디자인 구현 시 다양한 디바이스 해상도 대응에서 어려움을 겪었으나, 미디어 쿼리 활용과 유연한 레이아웃 설계를 통해 문제를 해결하였습니다.</p>
+        <p><strong>새롭게 배운 내용:</strong> CSS Grid와 Flexbox를 적극 활용하여 구조적이고 유지보수가 용이한 레이아웃을 설계하는 방법을 익혔으며, 팀원 간의 GitHub 기반 협업 프로세스를 실전 경험하였습니다.</p>
+        <p><strong>팀워크 경험:</strong> 팀원 간의 적극적인 커뮤니케이션과 역할 분담을 통해 협업 역량을 향상시켰으며, 효과적인 협업 도구 활용법과 실무적 개발 프로세스를 학습하였습니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleSection(contentId) {
+      const content = document.getElementById(contentId);
+      const button = document.querySelector(`[onclick="toggleSection('${contentId}')"]`);
+      const isActive = content.classList.contains('active');
+
+      if (isActive) {
+        content.classList.remove('active');
+        button.classList.remove('active');
+        content.style.maxHeight = '0';
+        content.style.padding = '0';
+      } else {
+        content.classList.add('active');
+        button.classList.add('active');
+        content.style.maxHeight = '300px'; // 펼쳐진 최대 높이
+        content.style.padding = '1.5rem';
+      }
+    }
+  </script>
+</body>
+</html>
