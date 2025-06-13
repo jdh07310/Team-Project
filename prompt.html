@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프롬프트 기법</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+      <div class="title">
+        <h1>생성형 AI의 원리 및 응용 사례</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="team.html">팀 소개</a></li>
+          <li><a href="teamproject.html">프로젝트 소개</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 소개 섹션 -->
+    <section id="introduction">
+      <div class="intro-container">
+        <h2>프롬프트 기법 개요</h2>
+        <p>
+          프롬프트는 생성형 AI가 의도한 방식으로 반응하도록 지시하는 핵심 입력
+          방식입니다. 아래에서 핵심 기법을 확인하세요.
+        </p>
+      </div>
+    </section>
+
+    <!-- 카드 섹션 -->
+    <section class="card-container">
+      <div class="card">
+        <h3>프롬프트 엔지니어링</h3>
+        <p>
+          AI 모델의 응답을 제어하기 위해 입력 문장을 전략적으로 설계하는
+          기법입니다. 명확한 지시와 역할 부여가 중요합니다.
+        </p>
+      </div>
+      <div class="card">
+        <h3>프롬프트 설계 전략</h3>
+        <p>
+          출력 형식 지정, 예시 제공, 조건 명시 등 다양한 설계 전략을 통해 보다
+          일관된 응답을 유도할 수 있습니다.
+        </p>
+      </div>
+      <div class="card">
+        <h3>최적 결과 도출 방법</h3>
+        <p>
+          프롬프트 반복 실험, 체이닝, 온도/토큰 제어 등의 기법을 조합하여 원하는
+          수준의 출력을 유도합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 상세 설명 섹션 -->
+    <section class="detail-section">
+      <div class="content-container">
+        <h2>예시 프롬프트</h2>
+        <p>
+          <strong>문장 생성:</strong> "AI 기술의 미래에 대해 3문단으로
+          설명해줘." <br /><strong>이미지 생성:</strong> "우주 배경에 떠 있는
+          사이버 고양이를 디지털 아트 스타일로 그려줘." <br /><strong
+            >문체 변경:</strong
+          >
+          "아래 문장을 뉴스 기사 스타일로 바꿔줘. → '오늘 우리는 역사적인 AI
+          발표를 접했다.'"
+        </p>
+      </div>
+    </section>
+
+    <!-- 차트 섹션 -->
+    <section class="detail-section">
+      <div class="content-container">
+        <h2>프롬프트 사용 목적 비율</h2>
+        <canvas id="prompt-chart" class="visualization"></canvas>
+      </div>
+    </section>
+    <script src="prompt-chart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
